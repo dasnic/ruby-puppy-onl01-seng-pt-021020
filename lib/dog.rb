@@ -20,4 +20,4 @@ class Dog
   end
 
 end 
-=> =>{Dog.print_all}
+{Dog.print_all}=> =>
