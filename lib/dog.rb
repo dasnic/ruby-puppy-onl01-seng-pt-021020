@@ -19,4 +19,4 @@ class Dog
     @@all.clear
   end
 
-end# Add your code here
+end 
