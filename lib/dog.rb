@@ -1,20 +1,15 @@
-class Dog
-  attr_accessor :name
-
+class Dog  #belong to a shelter & an owner
+  attr_accessor :name, :age, :breed, :shelter, :owner
   @@all = []
-
-  def initialize(name)
+  
+  def initialize(name, age, breed)
     @name = name
-    @@all << self
-  end
-
-  def self.clear_all
-    @@all.clear
-  end
-
+    @age = age
+    @breed = breed 
+    @@all << self 
+  end 
+  
   def self.all
-    @@all.each do |d|
-      puts d.name
-    end
-  end
+    @@all
+  end 
 end
